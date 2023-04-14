@@ -14,7 +14,9 @@ const Card = ({ item }) => {
 
       <Pressable
         style={styles.btn}
-        onPress={() => navigation.navigate('Movies', { name: item.name })}
+        onPress={() =>
+          navigation.navigate('Movies', { name: item.name, image: item.image })
+        }
       >
         <Text style={styles.text}>Book</Text>
       </Pressable>

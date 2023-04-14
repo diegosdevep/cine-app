@@ -6,7 +6,7 @@ import { styles } from './seats.styles';
 
 const Seats = () => {
   const route = useRoute();
-  const { seats, setSeats } = useContext(MovieContext);
+  const { seats, setSeats, occupied } = useContext(MovieContext);
 
   const onSeatSelect = (item) => {
     const seatSelected = seats?.find((seat) => seat === item);
@@ -26,15 +26,23 @@ const Seats = () => {
         <Pressable onPress={() => onSeatSelect(item)} style={styles.seats}>
           {seats?.includes(item) ? (
             <Text
-              style={[
-                styles.textSeats,
-                {
-                  backgroundColor: 'orange',
-                  borderColor: 'orange',
-                  flex: 1,
-                  width: '100%',
-                },
-              ]}
+              style={{
+                backgroundColor: '#FFC40C',
+                padding: 8,
+                flex: 1,
+                width: '100%',
+              }}
+            >
+              {item}
+            </Text>
+          ) : occupied.includes(item) ? (
+            <Text
+              style={{
+                backgroundColor: '#989898',
+                padding: 8,
+                flex: 1,
+                width: '100%',
+              }}
             >
               {item}
             </Text>

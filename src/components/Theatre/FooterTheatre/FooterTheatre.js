@@ -2,9 +2,17 @@ import React, { useContext } from 'react';
 import { View, Text, Pressable } from 'react-native';
 import { MovieContext } from '../../../context/Context';
 import { styles } from './footer.styles';
+import { useNavigation, useRoute } from '@react-navigation/native';
 
 const FooterTheatre = () => {
-  const { seats, setSeats } = useContext(MovieContext);
+  const { seats, setSeats, occupied, selectedDate } = useContext(MovieContext);
+  const navigation = useNavigation();
+  const route = useRoute();
+
+  const fee = 87;
+  const noOfSeats = seats.length;
+  const total = seats.length > 0 ? fee + noOfSeats * 240 : 0;
+  const displayName = [...seats];
 
   const showSeat = () => {
     return seats.map((seat, index) => (
@@ -14,6 +22,22 @@ const FooterTheatre = () => {
         </Text>
       </View>
     ));
+  };
+
+  const goToTicket = () => {
+    if (total > 0) {
+      occupied.push(...seats);
+      navigation.navigate('Ticket', {
+        name: route.params.name,
+        malls: route.params.malls,
+        timeSelected: route.params.timeSelected,
+        total: total,
+        date: selectedDate,
+        image: route.params.image,
+        selectedSeats: displayName,
+      });
+      setSeats([]);
+    }
   };
 
   return (
@@ -40,7 +64,7 @@ const FooterTheatre = () => {
         </View>
       </View>
 
-      <Pressable style={styles.btn}>
+      <Pressable onPress={goToTicket} style={styles.btn}>
         {seats.length > 0 ? (
           <Text style={{ fontSize: 17, fontWeight: '600' }}>
             {seats.length} Seat's Selected
@@ -51,7 +75,7 @@ const FooterTheatre = () => {
           </Text>
         )}
 
-        <Text style={styles.textBtn}>Pay</Text>
+        <Text style={styles.textBtn}>Pay ${total}</Text>
       </Pressable>
     </>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { FlatList, Pressable, SafeAreaView, Text, View } from 'react-native';
 import { styles } from './movies.styles';
 import MovieNavbar from '../../components/MovieNavbar/MovieNavbar';
@@ -6,19 +6,19 @@ import { AntDesign } from '@expo/vector-icons';
 import HorizontalDatepicker from '@awrminkhodaei/react-native-horizontal-datepicker';
 import { data } from '../../data/data';
 import { useNavigation, useRoute } from '@react-navigation/native';
+import { MovieContext } from '../../context/Context';
 
 const MoviesScreen = () => {
-  const [selectedDate, setSelectedDate] = useState('');
   const [malls, setMalls] = useState('');
   const [seatData, setSeatData] = useState([]);
   const navigation = useNavigation();
   const route = useRoute();
+  const { selectedDate, setSelectedDate } = useContext(MovieContext);
 
   const today = new Date();
   const startDate = new Date();
   const endDate = new Date();
   endDate.setMonth(endDate.getMonth() + 1);
-
   return (
     <SafeAreaView style={styles.container}>
       <MovieNavbar />
@@ -66,6 +66,8 @@ const MoviesScreen = () => {
                       name: route.params.name,
                       timeSelected: item,
                       tableSeats: seatData,
+                      date: selectedDate,
+                      image: route.params.image,
                     })
                   }
                   style={styles.hoursContainer}

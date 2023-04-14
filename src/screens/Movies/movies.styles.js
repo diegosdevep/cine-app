@@ -24,6 +24,8 @@ export const styles = StyleSheet.create({
     borderRadius: 3,
     margin: 10,
     padding: 5,
+    flex: 1,
+    width: '100%',
   },
   hours: {
     fontSize: 16,

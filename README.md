@@ -1,0 +1,2 @@
+- yarn add @awrminkhodaei/react-native-horizontal-datepicker
+- yarn add moment-jalaali

@@ -21,16 +21,17 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
   },
   btn: {
-    backgroundColor: 'green',
+    backgroundColor: '#222831',
     marginLeft: 'auto',
     marginRight: 'auto',
-    width: 120,
+    width: 220,
     borderRadius: 4,
     padding: 10,
   },
   textBtn: {
     textAlign: 'center',
     color: 'white',
-    fontSize: 15,
+    fontSize: 16,
+    fontWeight: 600,
   },
 });

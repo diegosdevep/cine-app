@@ -9,8 +9,6 @@ const QrCode = () => {
 
   return (
     <View>
-      <Text style={styles.border} />
-
       <View style={styles.content}>
         <SvgQRCode value={'hello'} />
       </View>

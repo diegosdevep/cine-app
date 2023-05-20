@@ -2,33 +2,33 @@ export const movies = [
   {
     id: '0',
     image:
-      'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rS8fGGgs9panboG1ZVGS6CFzXJM.jpg',
-    name: 'LAL SINGH CHADDHA',
-    language: 'Hindi',
-    genre: 'DRAMA',
+      'https://www.themoviedb.org/t/p/w1280/hc2ymDMfOCZ0JqrsMUBgL1GZXnz.jpg',
+    name: 'FAST AND FURIOUS',
+    language: 'ENGLISH',
+    genre: 'ACTION',
   },
   {
     id: '1',
     image:
-      'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ykefXRqhM7HVnLWPtXWcWCcvBy6.jpg',
-    name: 'RAKSHA BANDHAN',
-    language: 'Hindi',
-    genre: 'ACTION',
+      'https://www.themoviedb.org/t/p/w1280/A8BXrFD0FIH2iVbOoTEw7DxnHCb.jpg',
+    name: 'THE MOTHER',
+    language: 'ENGLISH',
+    genre: 'DRAMA',
   },
   {
     id: '2',
     image:
-      'https://www.themoviedb.org/t/p/w440_and_h660_face/6SYaaIjLDistEd7DoeS328FVWn0.jpg',
-    name: 'SEETHARAMAM',
-    language: 'TELUGU',
-    genre: 'DRAMA',
+      'https://www.themoviedb.org/t/p/w1280/zNKs1T0VZuJiVuhuL5GSCNkGdxf.jpg',
+    name: 'SUPER MARIO BROS',
+    language: 'SPANISH',
+    genre: 'FANTASIA',
   },
   {
     id: '3',
     image:
-      'https://www.themoviedb.org/t/p/w440_and_h660_face/6QxZRJsODH2kNZ6oNd3qug73FoQ.jpg',
-    name: 'BIMBISAARA',
-    language: 'TELUGU',
+      'https://www.themoviedb.org/t/p/w1280/3jce1QvM2sma0TKYckNmIKzjhHC.jpg',
+    name: 'Murder Mystery 2',
+    language: 'SPANISH',
     genre: 'ACTION',
   },
   {
@@ -50,9 +50,9 @@ export const movies = [
   {
     id: '6',
     image:
-      'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/a2oUkUgMowYyi8qeGS28rAXPNXT.jpg',
-    name: 'KURUTHI AATTAM',
-    language: 'TAMIL',
+      'https://www.themoviedb.org/t/p/w1280/bWifGZF9fkJ83zOVHPGaN4ZL2pQ.jpg',
+    name: 'LONE SURVIVOR',
+    language: 'ENGLISH',
     genre: 'ACTION',
   },
   {
@@ -60,31 +60,23 @@ export const movies = [
     image:
       'https://www.themoviedb.org/t/p/w188_and_h282_bestv2/amAbP9YbIAlAXHdIon1x8l7aDFT.jpg',
     name: 'EK VILLIAN RETURNS',
-    language: 'HINDI',
+    language: 'SPANISH',
     genre: 'ACTION',
   },
   {
     id: '8',
     image:
-      'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qlsNqqczg1rr5lfUgiPlLiykGGM.jpg',
-    name: 'VIRUMAN',
-    language: 'TAMIL',
+      'https://www.themoviedb.org/t/p/w1280/dGimwAyUWnZoffWTiiWnf9mFxV2.jpg',
+    name: 'TITANIC 2',
+    language: 'SPANISH',
     genre: 'ACTION',
   },
   {
     id: '9',
     image:
-      'https://www.themoviedb.org/t/p/w440_and_h660_face/xAG7S6X73B74CeLjo8gcVoWtunr.jpg',
-    name: 'ROCKETRY',
-    language: 'HINDI',
-    genre: 'DRAMA',
-  },
-  {
-    id: '10',
-    image:
-      'https://www.themoviedb.org/t/p/w188_and_h282_bestv2/irmHAELoYRaECBr8zQAlD4myrfk.jpg',
-    name: '777 CHARLIE',
-    language: 'KANNADA',
-    genre: 'DRAMA',
+      'https://www.themoviedb.org/t/p/w1280/lEzI0Sib3eGO82oMSk62Qo3fzJn.jpg',
+    name: 'INVICTO 3',
+    language: 'ENGLISH',
+    genre: 'ACTION',
   },
 ];

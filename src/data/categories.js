@@ -1,22 +1,22 @@
 export const categories = [
   {
     id: '0',
-    name: 'IMAX',
+    name: '2D',
   },
   {
     id: '1',
-    name: '4DX',
+    name: '3D',
   },
   {
     id: '2',
-    name: 'PXL',
+    name: 'QR CODE',
   },
   {
     id: '3',
-    name: 'GOLD',
+    name: 'SILVER PASS',
   },
   {
     id: '4',
-    name: 'PLAYHOUSE',
+    name: 'GOLD PASS',
   },
 ];

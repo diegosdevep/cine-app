@@ -13,14 +13,14 @@ const TopTicket = () => {
     <View style={styles.content}>
       <View style={styles.box}>
         <Text style={styles.name}>{route.params.name}</Text>
-        <Text>{route.params.selectedSeats.length}</Text>
+        <Text>Quantity seats {route.params.selectedSeats.length}</Text>
       </View>
 
       <View style={styles.box}>
         <Text style={{ fontSize: 16, color: 'grey' }}>
           New York Cinema - 2D
         </Text>
-        <Text style={{ color: 'red', fontSize: 16 }}>PVR TICKET</Text>
+        <Text style={{ color: 'red', fontSize: 16 }}> TICKET</Text>
       </View>
 
       <Text style={styles.mall}>{route.params.malls}</Text>
@@ -28,8 +28,8 @@ const TopTicket = () => {
       <Text style={styles.border} />
 
       <DetailTicket />
-      <PaymentDetails />
       <QrCode />
+      <PaymentDetails />
     </View>
   );
 };

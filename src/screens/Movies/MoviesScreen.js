@@ -7,6 +7,11 @@ import HorizontalDatepicker from '@awrminkhodaei/react-native-horizontal-datepic
 import { data } from '../../data/data';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { MovieContext } from '../../context/Context';
+import { LogBox } from 'react-native';
+
+LogBox.ignoreLogs([
+  'Non-serializable values were found in the navigation state',
+]);
 
 const MoviesScreen = () => {
   const [malls, setMalls] = useState('');

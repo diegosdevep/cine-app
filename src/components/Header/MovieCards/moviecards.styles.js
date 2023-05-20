@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   content: {},
   img: {
-    aspectRatio: 4 / 5,
+    aspectRatio: 3.8 / 5,
     height: 240,
     margin: 5,
     marginTop: 10,
@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
     color: 'grey',
   },
   btn: {
-    backgroundColor: '#FFC40C',
+    backgroundColor: '#222831',
     padding: 10,
     borderRadius: 6,
     width: '95%',
@@ -33,5 +33,6 @@ export const styles = StyleSheet.create({
   text: {
     fontSize: 14,
     fontWeight: '500',
+    color: 'white',
   },
 });

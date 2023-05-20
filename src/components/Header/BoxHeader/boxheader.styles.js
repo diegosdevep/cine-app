@@ -39,7 +39,7 @@ export const styles = StyleSheet.create({
     marginTop: 8,
   },
   containerBook: {
-    backgroundColor: '#FFC40C',
+    backgroundColor: '#1876D2',
     padding: 10,
     borderRadius: 6,
     marginHorizontal: 10,
@@ -49,5 +49,6 @@ export const styles = StyleSheet.create({
     fontWeight: '500',
     textAlign: 'center',
     textTransform: 'uppercase',
+    color: 'white',
   },
 });

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { Pressable, Image, Text } from 'react-native';
+import { Pressable, Image, Text, View } from 'react-native';
 import { styles } from './moviecards.styles';
 
 const Card = ({ item }) => {
@@ -9,8 +9,16 @@ const Card = ({ item }) => {
     <Pressable style={styles.content}>
       <Image style={styles.img} source={{ uri: item.image }} />
       <Text style={styles.title}>{item.name}</Text>
-      <Text style={styles.subtitle}>{item.language}</Text>
-      <Text style={[styles.subtitle, { color: 'black' }]}>{item.genre}</Text>
+      <View
+        style={{
+          justifyContent: 'space-between',
+          flexDirection: 'row',
+          marginRight: 5,
+        }}
+      >
+        <Text style={styles.subtitle}>{item.language}</Text>
+        <Text style={[styles.subtitle, { color: 'black' }]}>{item.genre}</Text>
+      </View>
 
       <Pressable
         style={styles.btn}

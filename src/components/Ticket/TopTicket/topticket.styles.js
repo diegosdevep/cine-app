@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
     height: '90%',
     margin: 10,
     borderRadius: 6,
+    justifyContent: 'space-around',
   },
   box: {
     padding: 10,

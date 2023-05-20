@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ImageBackground } from 'react-native';
+import { View, ImageBackground, Image } from 'react-native';
 import BoxHeader from './BoxHeader/BoxHeader';
 import Categories from './Categories/Categories';
 import { styles } from './header.styles';
@@ -7,16 +7,16 @@ import { styles } from './header.styles';
 const Header = () => {
   return (
     <View>
-      <ImageBackground
+      <Image
         style={styles.img}
         source={{
-          uri: 'https://originserver-static1-uat.pvrcinemas.com/newweb/movies/big/1460x600/HO00020779.jpg',
+          uri: 'https://i.pinimg.com/originals/c3/ab/de/c3abdef9bfcde2895c7718576cc5d91b.jpg',
         }}
       >
-        <BoxHeader />
-      </ImageBackground>
+        {/* <BoxHeader /> */}
+      </Image>
 
-      <View style={{ marginTop: 110 }} />
+      <View style={{ marginTop: 0 }} />
       <Categories />
     </View>
   );
